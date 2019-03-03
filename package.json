@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Create a test-case table for use with Jest's test.each tagged template literal",
   "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:cameronhunter/jest-each-table.git"
+  },
   "license": "MIT",
   "main": "./src/index.js",
   "scripts": {
