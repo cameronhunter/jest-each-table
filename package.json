@@ -1,0 +1,16 @@
+{
+  "name": "jest-each-table",
+  "version": "0.0.1",
+  "description": "Create a test-case table for use with Jest's test.each tagged template literal",
+  "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest",
+    "format": "prettier --write *.{js,json,md}"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4"
+  }
+}

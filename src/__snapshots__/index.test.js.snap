@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can be used to create strings 1`] = `
+"
+inputs|output
+{\\"left\\":0,\\"right\\":0}|0
+{\\"left\\":1,\\"right\\":1}|2
+{\\"left\\":2,\\"right\\":2}|4
+{\\"left\\":3,\\"right\\":3}|6
+{\\"left\\":4,\\"right\\":4}|8
+{\\"left\\":5,\\"right\\":5}|10
+{\\"left\\":6,\\"right\\":6}|12
+{\\"left\\":7,\\"right\\":7}|14
+{\\"left\\":8,\\"right\\":8}|16
+{\\"left\\":9,\\"right\\":9}|18
+"
+`;
