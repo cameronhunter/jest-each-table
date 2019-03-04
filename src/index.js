@@ -2,12 +2,15 @@ const Separator = '|';
 
 function getColumnTitlesFor(testcases) {
   const keys = testcases.reduce((state, object) => new Set([...state, ...Object.keys(object)]), new Set());
-  return [...keys];
+  return ['#', ...keys];
 }
 
 function getColumnValuesFor(columns, testcases) {
   return testcases.reduce(
-    (values, testcase) => [...values, ...columns.reduce((state, column) => [...state, testcase[column]], [])],
+    (values, testcase, index) => [
+      ...values,
+      ...columns.reduce((state, column) => [...state, column === '#' ? index + 1 : testcase[column]], [])
+    ],
     []
   );
 }

@@ -9,7 +9,7 @@ const testcases = createTestTable(
 
 const testsuite = test.each(...testcases);
 
-testsuite('$inputs.left + $inputs.right = $output', ({ inputs, output }) => {
+testsuite('Testcase $#: $inputs.left + $inputs.right = $output', ({ inputs, output }) => {
   expect(inputs.left + inputs.right).toBe(output);
 });
 
