@@ -1,6 +1,6 @@
 {
   "name": "jest-each-table",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Create a test-case table for use with Jest's test.each tagged template literal",
   "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
   "repository": {
