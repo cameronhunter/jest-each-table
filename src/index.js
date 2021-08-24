@@ -1,15 +1,16 @@
 const Separator = '|';
+const IndexHeader = 'testcaseIndex';
 
 function getColumnTitlesFor(testcases) {
   const keys = testcases.reduce((state, object) => new Set([...state, ...Object.keys(object)]), new Set());
-  return ['#', ...keys];
+  return [IndexHeader, ...keys];
 }
 
 function getColumnValuesFor(columns, testcases) {
   return testcases.reduce(
     (values, testcase, index) => [
       ...values,
-      ...columns.reduce((state, column) => [...state, column === '#' ? index + 1 : testcase[column]], [])
+      ...columns.reduce((state, column) => [...state, column === IndexHeader ? index + 1 : testcase[column]], []),
     ],
     []
   );

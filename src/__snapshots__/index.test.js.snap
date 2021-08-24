@@ -2,7 +2,7 @@
 
 exports[`can be used to create strings 1`] = `
 "
-#|inputs|output
+testcaseIndex|inputs|output
 1|{\\"left\\":0,\\"right\\":0}|0
 2|{\\"left\\":1,\\"right\\":1}|2
 3|{\\"left\\":2,\\"right\\":2}|4
